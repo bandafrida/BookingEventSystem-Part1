@@ -1,0 +1,63 @@
+﻿@model BookingEvent.Models.Event
+
+@{
+    ViewData["Title"] = "Edit Event";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-header bg-dark text-white">
+                    <h3>Edit Event</h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form asp-action="Edit">
+
+                        <input type="hidden" asp-for="EventId" />
+
+                        <div class="mb-3">
+                            <label asp-for="EventName"></label>
+                            <input asp-for="EventName" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="EventDate"></label>
+                            <input asp-for="EventDate" type="date" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="EventTime"></label>
+                            <input asp-for="EventTime" type="time" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ImageUrl"></label>
+                            <input asp-for="ImageUrl" class="form-control" />
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            Save Changes
+                        </button>
+
+                        <a asp-action="Index" class="btn btn-secondary w-100 mt-2">
+                            Back
+                        </a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

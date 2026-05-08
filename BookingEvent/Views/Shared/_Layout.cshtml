@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BookingEvent</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BookingEvent.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>🎟 Event System</h2>
+
+        <a asp-controller="Home" asp-action="Index">🏠 Dashboard</a>
+        <a asp-controller="Event" asp-action="Index">📅 Events</a>
+        <a asp-controller="Venue" asp-action="Index">🏟 Venues</a>
+        <a asp-controller="Booking" asp-action="Index">📌 Bookings</a>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        @RenderBody()
+
+    </div>
+
+    <!-- ✅ FIX: REQUIRED FOR SCRIPTS -->
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

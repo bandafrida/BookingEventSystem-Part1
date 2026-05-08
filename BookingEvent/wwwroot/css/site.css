@@ -1,0 +1,139 @@
+:root {
+    --primary: #2563eb; 
+    --primary-dark: #1e40af; 
+    --secondary: #0f172a; 
+    --background: #f1f5f9; 
+    --card: #ffffff;
+    --text: #1f2937;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #dc2626;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--secondary);
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 22px;
+        color: var(--primary);
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 15px 20px;
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: 0.3s;
+        border-left: 3px solid transparent;
+    }
+
+        .sidebar a:hover {
+            background: #1e293b;
+            color: white;
+            border-left: 3px solid var(--primary);
+            padding-left: 25px;
+        }
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 240px;
+    padding: 25px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* CARDS */
+.card-custom {
+    background: var(--card);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+    .card-custom:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+/* BUTTONS */
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: var(--primary-dark);
+    }
+
+.btn-success {
+    background-color: var(--success);
+    border: none;
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    border: none;
+    color: black;
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    border: none;
+}
+
+/* TABLES */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* FORM INPUTS */
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+    .form-control:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 0.2rem rgba(37,99,235,0.25);
+    }
+
+/* CARD HEADERS */
+.card-header {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+/* LINKS */
+a {
+    transition: 0.2s;
+}
